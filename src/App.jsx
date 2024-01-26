@@ -1,9 +1,13 @@
 import './App.css'
-
+import { Header } from './components/header/Header';
 function App() {
   return (
     <>
       <header>
+        <Header
+          img={'../img/home-bg.2ba84dacc0df6ddf98df.webp'}
+          text={'BUILD A STRONG FOUNDATION FOR YOUR FINANCIAL FUTURE'}
+        />
         {/* <img src="" alt="logo" />
         <li>
           <a href="">hola</a>
