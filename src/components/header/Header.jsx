@@ -54,7 +54,7 @@ export function Header({ img, text }) {
       </div>
 
     </div>
-    <h1>{text}</h1>
+    <h1 className="nav-text">{text}</h1>
   </>
   );
 }
