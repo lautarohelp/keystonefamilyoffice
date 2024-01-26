@@ -1,0 +1,9 @@
+.info-contact-info {
+  color: rgba(240, 248, 255, 0.787);
+  text-decoration: none;
+  padding-bottom: 25px ;
+  font-size: 1.2rem;
+}
+.info-contact-info span {
+  margin-right: 15px;
+}
