@@ -6,10 +6,12 @@
 
     .card_Maincontainer{
         display: flex;
-       align-items: center;
+        align-items: center;
         flex-direction: column;
         width: 100%;
-        background-color:rgba(152, 251, 152, 0)
+        background-color:rgba(152, 251, 152, 0);
+        margin: 50px 0;
+
     }
     .card_Maincontainer2{
         display: none;
@@ -78,13 +80,13 @@
 @media (min-width: 700px){
     .card_Maincontainer, .card_Maincontainer2{
         align-items: normal;
-        margin-top: 40px;
+        margin-top: 100px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 100%;
         background-color:rgba(152, 251, 152, 0);
-        padding-bottom: 60px;
+        padding-bottom: 70px;
     }
    
     .card_container{

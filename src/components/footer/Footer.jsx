@@ -3,6 +3,7 @@ import { FaFax } from "react-icons/fa";
 import { FaMailBulk } from "react-icons/fa";
 import { ContactInfo } from "./Contact-info";
 import { InfoSection } from "./Info-section"
+import { FadeIn } from "../Componenets-animation/FadeIn";
 import './footer.css'
 
 function Footer() {
@@ -12,6 +13,7 @@ function Footer() {
       <footer className="content-footer">
         <img className="img-footer" src="../img/white-logo-navbar.1c9c0bb65b54b3a52b1d.webp" alt="" />
         <div className="info-footer">
+          <FadeIn>
             <div className='infoSection'>
               <InfoSection
                 title={'Keystone Family Office Inc'}
@@ -35,7 +37,9 @@ function Footer() {
 
             </InfoSection>
             </div>
+          </FadeIn>
 
+          <FadeIn>
             <div className='infoSection'>
               <InfoSection
                 className={'infoSection'}
@@ -55,7 +59,9 @@ function Footer() {
 
               </InfoSection>
             </div>
-
+          </FadeIn>
+          
+          <FadeIn>
             <div className='infoSection'>
               <InfoSection
                 className={'infoSection'}
@@ -80,6 +86,7 @@ function Footer() {
 
               </InfoSection>
             </div>
+          </FadeIn>
         </div>
 
         <p className="finpage-footer">

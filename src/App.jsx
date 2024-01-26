@@ -24,10 +24,10 @@ function App() {
             text={'We want our clients to enjoy a clear understanding of why they need to disrupt their current mindset and measures for success and realize the impact on their businesses and their goals.'} 
             img={"https://www.keystonefamilyoffice.com/static/media/home-3.c7957d9ebf3cab2e8260.webp"} 
             order={1}
-        />ñ
+        />
         
 
-      <Footer></Footer>
+      <Footer/>
     </>
   )
 }
