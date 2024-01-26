@@ -1,3 +1,4 @@
+import { Footer } from './footer/Footer'
 import './App.css'
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
       </header>
       <main>
       </main>
-      <footer></footer>
+      <Footer></Footer>
     </>
   )
 }
