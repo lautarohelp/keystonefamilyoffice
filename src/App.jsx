@@ -1,6 +1,6 @@
-import { Footer } from './footer/Footer'
+import { Footer } from './components/footer/Footer.jsx';
+import Card from './components/cards/cards.jsx';
 import './App.css'
-import Card from './components/cards/cards.jsx'
 
 function App() {
   return (
