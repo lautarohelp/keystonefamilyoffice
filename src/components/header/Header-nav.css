@@ -1,0 +1,41 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Header-logoApp {
+  height: 45px;
+  width: 11%;
+  margin: 15px 10px;
+}
+
+.Menu {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 0 50px;
+  padding: 15px 10px;
+}
+
+.Menu-icon {
+  display: none;
+}
+
+.Menu-ancla,
+.Menu-div {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Barlow Condensed', sans-serif;
+  cursor: pointer;
+}
+
+.Menu-li {
+  color: #85898b;
+}
+
+.Menu-ancla:hover,
+.Menu-div:hover {
+  color: rgba(255, 255, 255, 0.678);
+}
