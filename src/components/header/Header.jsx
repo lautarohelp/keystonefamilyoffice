@@ -14,7 +14,7 @@ export function Header({ img, text }) {
         aboutUs={'About Us'}
         services={'Services'}
         contactUs={'Contact Us'}
-        benefits={'Benefits'}
+        benefits={'Employee benefits'}
       />
 
     </div>

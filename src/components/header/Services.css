@@ -20,15 +20,31 @@ li {
   padding: 8px;
   color: white;
   text-decoration: none;
+
 }
 
 .Services-option li:hover {
   background-color: rgb(137, 136, 136);
 }
 
+.Menu-div {
+  position: relative;
+  margin-right: 10px;
+}
+
+.arrowOption {
+  position: absolute;
+  font-size: 2.3rem;
+  top: -3px;
+
+}
+
+
+
 @media(min-width: 800px) {
   .Services-option {
     position: absolute;
-    right: 12%;
+    width: 300px;
+    left: -8px;
   }
 }

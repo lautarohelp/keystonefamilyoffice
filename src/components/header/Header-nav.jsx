@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Services } from "./Services";
 import "./Header-nav.css";
-
+import { IoMdClose } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 export function HeaderNav({ logo, home, aboutUs, services, contactUs, benefits }) {
   //funcion para que aparezca un modal de services
@@ -15,7 +15,11 @@ export function HeaderNav({ logo, home, aboutUs, services, contactUs, benefits }
     <div className="Header">
       <img className="Header-logoApp" src={logo} alt="logo" />
       <div className="Menu-icon" onClick={openMenu}><GiHamburgerMenu /></div>
+
+
       <ul className={`${menuOptions ? `Menu` : `inactive`} mediaOptions`}>
+        <div className="Menu-icon Menu-iconX" onClick={openMenu}><IoMdClose /></div>
+
         <li className="Menu-li">
           <a className="Menu-ancla" href="">{home}</a>
         </li>

@@ -1,5 +1,4 @@
 .Header {
-
   display: flex;
   justify-content: space-between;
 }
@@ -9,8 +8,6 @@
   width: 11%;
   margin: 15px 10px;
 }
-
-
 
 .Menu {
   display: flex;
@@ -36,4 +33,9 @@
 
 .Menu-li {
   color: #85898b;
+}
+
+.Menu-ancla:hover,
+.Menu-div:hover {
+  color: rgba(255, 255, 255, 0.678);
 }
