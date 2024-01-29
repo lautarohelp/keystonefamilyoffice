@@ -1,0 +1,34 @@
+.Services-option {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 5px;
+  border: 1px solid rgba(168, 167, 167, 0.39);
+  box-shadow: 1px 1px 10px -7px white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.inactive {
+  display: none;
+}
+
+.Services-option-a,
+li {
+  font-size: 1.5rem;
+  list-style: none;
+  margin: 5px;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+.Services-option li:hover {
+  background-color: rgb(137, 136, 136);
+}
+
+@media(min-width: 800px) {
+  .Services-option {
+    position: absolute;
+    right: 12%;
+  }
+}
