@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+#root{
+  background-image: url('../img/fondo.jpeg');
+}
 
 html{
   font-size: 62.5%;
