@@ -6,8 +6,15 @@ function Card({ img, order, title, text }) {
     if (order === 1) {
         return (
             <>
-            <FadeIn>
+            <FadeIn 
+                directionStart='x'
+                start='20'
+                directionEnd='x'
+                end='-20'
+                time='1.5'
+                >
                 <section className='card_Maincontainer'>
+                
                     <section className='card_container'>
                         <div className={`cardTitle_container${order}`}><h1> {title}</h1></div>
                         <p>{text}</p>
@@ -23,7 +30,13 @@ function Card({ img, order, title, text }) {
     if (order === 2){
         return (
             <>
-            <FadeIn>
+            <FadeIn
+            directionStart='x'
+            start='-20'
+            directionEnd='x'
+            end='20'
+            time='1.5'
+            >
                 <section className='card_Maincontainer2'>
                     <img src={img} />
                     <section className={`card_container card_container${order}`}>

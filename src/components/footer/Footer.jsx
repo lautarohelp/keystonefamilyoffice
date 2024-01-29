@@ -13,7 +13,13 @@ function Footer() {
       <footer className="content-footer">
         <img className="img-footer" src="../img/white-logo-navbar.1c9c0bb65b54b3a52b1d.webp" alt="" />
         <div className="info-footer">
-          <FadeIn>
+          <FadeIn
+          directionStart="y"
+          start="-50"
+          directionEnd="y"
+          end="50"
+          time="1"
+          >
             <div className='infoSection'>
               <InfoSection
                 title={'Keystone Family Office Inc'}
@@ -39,7 +45,13 @@ function Footer() {
             </div>
           </FadeIn>
 
-          <FadeIn>
+          <FadeIn
+          directionStart="y"
+          start="-50"
+          directionEnd="y"
+          end="50"
+          time="1"
+          >
             <div className='infoSection'>
               <InfoSection
                 className={'infoSection'}
@@ -61,7 +73,13 @@ function Footer() {
             </div>
           </FadeIn>
           
-          <FadeIn>
+          <FadeIn
+          directionStart="y"
+          start="-50"
+          directionEnd="y"
+          end="50"
+          time="1"
+          >
             <div className='infoSection'>
               <InfoSection
                 className={'infoSection'}

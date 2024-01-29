@@ -5,6 +5,7 @@
 }
 #root{
   background-image: url('../img/fondo.jpeg');
+  overflow: hidden;
 }
 
 html{
