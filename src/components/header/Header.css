@@ -27,6 +27,7 @@
   .mediaOptions {
     display: flex;
     flex-direction: row;
+    
   }
 }
 

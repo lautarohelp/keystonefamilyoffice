@@ -4,7 +4,7 @@
   padding: 0;
 }
 #root{
-  background-image: url('../img/fondo.jpeg');
+  background: wheat;
   overflow: hidden;
 }
 
