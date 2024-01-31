@@ -1,13 +1,14 @@
 .Header {
   display: flex;
   justify-content: space-between;
-  /* position: fixed; */
+  position: fixed;
+  width: 100%;
 }
 
 .Header-logoApp {
   height: 45px;
-  width: 11%;
-  margin: 15px 5px;
+  width: 12%;
+  margin: 5px;
 }
 
 .Menu {
@@ -15,6 +16,7 @@
   flex-direction: row;
   margin: 0 10px;
   padding: 10px 10px;
+
 }
 
 .Menu-icon {
