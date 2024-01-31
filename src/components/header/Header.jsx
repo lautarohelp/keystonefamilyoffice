@@ -1,4 +1,3 @@
-
 import { HeaderNav } from "./Header-nav";
 import PropTypes from 'prop-types';
 import logo from "../../../img/white-logo-navbar.1c9c0bb65b54b3a52b1d.webp";
