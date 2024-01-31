@@ -7,12 +7,15 @@ import "./Header.css";
 Header.propTypes = {
   img: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 }
 
-export function Header({ img, text }) {
+export function Header({ img, text, title }) {
 
   return (<>
-    <div className="Header-container" style={{ display: 'flex', backgroundImage: `url(${img})`, backgroundRepeat: `none`, backgroundPosition: `center`, backgroundSize: `cover` }} >
+
+    <div className="Header-container" style={{ display: 'flex', backgroundImage: `url(${img})`, backgroundRepeat: `none`, backgroundPosition: `center`, backgroundSize: `cover` }}  >
+      <h2 className="titles">{title}</h2>
       <HeaderNav
         logo={logo}
         className={"Menu-ancla"}

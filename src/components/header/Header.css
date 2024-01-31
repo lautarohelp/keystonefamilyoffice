@@ -9,6 +9,17 @@
   flex-direction: column;
   height: 400px;
 
+
+}
+
+.titles {
+  position: absolute;
+  right: 650px;
+  top: 200px;
+  text-align: center;
+  font-size: 5.5rem;
+  color: white;
+
 }
 
 .nav-text {
@@ -27,7 +38,7 @@
   .mediaOptions {
     display: flex;
     flex-direction: row;
-    
+
   }
 }
 
@@ -36,6 +47,16 @@
   .Header-logoApp {
     width: 21%;
     margin: 15px 10px;
+  }
+
+  .titles {
+    position: absolute;
+    right: 170px;
+    top: 175px;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+
   }
 
   .Menu {
