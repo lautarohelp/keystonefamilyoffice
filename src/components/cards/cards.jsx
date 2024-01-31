@@ -52,7 +52,7 @@ function Card({ img, order, title, text }) {
 
 Card.propTypes = {
     img: PropTypes.string.isRequired,
-    order: PropTypes.string.isRequired,
+    order: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
 }

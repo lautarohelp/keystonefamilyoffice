@@ -44,10 +44,10 @@ function FadeIn({ time ,start, end,directionStart, directionEnd, children }) {
 }
 
 FadeIn.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.object.isRequired,
   directionStart: PropTypes.string.isRequired,
-  directionEnd: PropTypes.string.isRequired,
-  end: PropTypes.string.isRequired,
+  directionEnd: PropTypes.any,
+  end: PropTypes.string,
   start: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
 }
