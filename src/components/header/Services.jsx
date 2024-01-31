@@ -44,19 +44,19 @@ export function Services({ services }) {
       <div className="holaaaa" style={{opacity: 0}}>
         <ul className={`${servicesOptions ? "Services-option" : "inactive"}`} >
           <li> 
-            <NavLink className="Services-option-a" to={"tax_accounting"}>Tax and Accounting</NavLink>
+            <NavLink className="Services-option-a" to={"/tax_accounting"}>Tax and Accounting</NavLink>
           </li>
           <li>
-            <NavLink className="Services-option-a" to={"corporate"}>Corporate Service</NavLink>
+            <NavLink className="Services-option-a" to={"/corporate"}>Corporate Service</NavLink>
           </li>
           <li>
-          <NavLink className="Services-option-a" to={"realEstate"}>Real Estate Support</NavLink>
+          <NavLink className="Services-option-a" to={"/realEstate"}>Real Estate Support</NavLink>
           </li>
           <li>
-          <NavLink className="Services-option-a" to={"trust_support"}>Trust and Fiduciary Support</NavLink>
+          <NavLink className="Services-option-a" to={"/trust_support"}>Trust and Fiduciary Support</NavLink>
           </li>
           <li>
-          <NavLink className="Services-option-a" to={"wealth_management"}>Affiliated Wealth Management</NavLink>
+          <NavLink className="Services-option-a" to={"/wealth_management"}>Affiliated Wealth Management</NavLink>
           </li>
         </ul>
       </div>
