@@ -4,7 +4,7 @@ import './App.css'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import { Home } from './Routes/home.route.jsx';
 import { Footer } from './components/footer/Footer.jsx';
-import { AboutUs } from './Routes/about-us.router.jsx';
+import { AboutUs } from './Routes/aboutUs/about-us.router.jsx';
 import { TaxAccounting } from './Routes/Service.Routes/tax-accounting.router.jsx';
 import { CorporateService } from './Routes/Service.Routes/corporate-service.router.jsx';
 import { RealEstateSupport } from './Routes/Service.Routes/realEstate-support.router.jsx';

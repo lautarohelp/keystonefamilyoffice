@@ -6,12 +6,14 @@ import "./Header.css";
 Header.propTypes = {
   img: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 }
 
 export function Header({ img, text }) {
 
   return (<>
     <div className="Header-container" style={{ display: 'flex', backgroundImage: `url(${img})`, backgroundRepeat: `none`, backgroundPosition: `center`, backgroundSize: `cover` }} >
+
       <HeaderNav
         logo={logo}
         className={"Menu-ancla"}
