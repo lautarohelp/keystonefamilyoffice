@@ -5,6 +5,8 @@
   font-size: 1.2rem;
   margin-left: 70px; 
   max-width: 266px;
+  position: relative;
+  top:  40px;
 }
 
 .title-info {
