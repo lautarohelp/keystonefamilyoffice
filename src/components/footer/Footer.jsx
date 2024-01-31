@@ -108,7 +108,7 @@ function Footer() {
         </div>
 
         <p className="finpage-footer">
-        Copyright ©​ Keystone Family Office Inc.  
+        Copyright © Keystone Family Office Inc.  
         <a href="#">| Revalcode</a>
         </p>
       </footer>

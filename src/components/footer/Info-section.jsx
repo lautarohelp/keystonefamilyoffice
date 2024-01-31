@@ -20,7 +20,7 @@ function InfoSection({title, direction, children}) {
 InfoSection.propTypes = {
   title: PropTypes.string.isRequired,
   direction: PropTypes.string.isRequired,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.array.isRequired,
 }
 
 export { InfoSection }

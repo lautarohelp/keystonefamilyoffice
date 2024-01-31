@@ -1,36 +1,37 @@
-import { Footer } from './components/footer/Footer.jsx';
-import Card from './components/cards/cards.jsx';
+
 import './App.css'
 
-import { Header } from './components/header/Header';
+import { HashRouter, Route, Routes } from 'react-router-dom'
+import { Home } from './Routes/home.route.jsx';
+import { Footer } from './components/footer/Footer.jsx';
+import { AboutUs } from './Routes/about-us.router.jsx';
+import { TaxAccounting } from './Routes/Service.Routes/tax-accounting.router.jsx';
+import { CorporateService } from './Routes/Service.Routes/corporate-service.router.jsx';
+import { RealEstateSupport } from './Routes/Service.Routes/realEstate-support.router.jsx';
+import { TrustSupport } from './Routes/Service.Routes/trust-support.router.jsx';
+import { WealthManagement } from './Routes/Service.Routes/wealth-management.router.jsx';
+import { ContactUs } from './Routes/contact-us.router.jsx';
+import { EmployeeBenefits } from './Routes/employee.router.jsx';
+
 function App() {
+
   return (
     <>
-      <Header
-        img={'../img/home-bg.2ba84dacc0df6ddf98df.webp'}
-        text={'BUILD A STRONG FOUNDATION FOR YOUR FINANCIAL FUTURE'}
-      />
-
-      <Card title={"WELCOME"}
-        text={'The measurement of a firms’ success has changed radically. Professionals in our industry know that they need to change how they interact with their clients, focusing on the value that they offer rather than just the service they provide. Thus, we value our clients like family.'}
-        img={"https://www.keystonefamilyoffice.com/static/media/home-1.fabca82e7ec442e17907.webp"}
-        order={1}
-      />
-
-      <Card title={"OUR STRATEGY"}
-        text={'However, a more radical shift needs to happen internally. Firms need to embrace and foster a new mindset, disrupting their existing definition of success to account for new technologies, capabilities, and service models. Then provide this level of commitment to our clients.'}
-        img={"https://www.keystonefamilyoffice.com/static/media/home-2.862c5ef7e0e291b62e02.webp"}
-        order={2}
-      />
-
-      <Card title={"COMMITMENT"}
-        text={'We want our clients to enjoy a clear understanding of why they need to disrupt their current mindset and measures for success and realize the impact on their businesses and their goals.'}
-        img={"https://www.keystonefamilyoffice.com/static/media/home-3.c7957d9ebf3cab2e8260.webp"}
-        order={1}
-      />
-
-
+      <HashRouter>
+        <Routes>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/about_us' element={<AboutUs/>}></Route>
+          <Route path='/tax_accounting' element={<TaxAccounting/>}></Route>
+          <Route path='/corporate' element={<CorporateService/>}></Route>
+          <Route path='/realEstate' element={<RealEstateSupport/>}></Route>
+          <Route path='/trust_support' element={<TrustSupport/>}></Route>
+          <Route path='/wealth_management' element={<WealthManagement/>}></Route>
+          <Route path='/contacts' element={<ContactUs/>}></Route>
+          <Route path='/employee' element={<EmployeeBenefits/>}></Route>
+          <Route path='*' element={"Not Found"}></Route>
+        </Routes>
       <Footer/>
+      </HashRouter>
     </>
   )
 }
