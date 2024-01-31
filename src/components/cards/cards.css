@@ -9,7 +9,7 @@
        align-items: center;
         flex-direction: column;
         width: 100%;
-        background-color:rgba(152, 251, 152, 0)
+        background-color:rgba(152, 251, 152, 0);
     }
     .card_Maincontainer2{
         display: none;

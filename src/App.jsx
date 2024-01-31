@@ -1,9 +1,12 @@
 import './App.css'
 import Card from './components/cards/cards.jsx'
 
+
 function App() {
   return (
     <>
+    
+   
     <Card title={"WELCOME"} 
     text={'The measurement of a firms’ success has changed radically. Professionals in our industry know that they need to change how they interact with their clients, focusing on the value that they offer rather than just the service they provide. Thus, we value our clients like family.'} 
     img={"https://www.keystonefamilyoffice.com/static/media/home-1.fabca82e7ec442e17907.webp"} 
