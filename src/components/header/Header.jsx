@@ -1,6 +1,12 @@
 import { HeaderNav } from "./Header-nav";
+import PropTypes from 'prop-types';
 import logo from "../../../img/white-logo-navbar.1c9c0bb65b54b3a52b1d.webp";
 import "./Header.css";
+
+Header.propTypes = {
+  img: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+}
 
 export function Header({ img, text }) {
 

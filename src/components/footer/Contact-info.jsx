@@ -13,7 +13,7 @@ function ContactInfo({img, info}) {
 }
 ContactInfo.propTypes = {
   info: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired
+  img: PropTypes.object.isRequired
 }
 
 export { ContactInfo }
