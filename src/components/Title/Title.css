@@ -1,0 +1,6 @@
+.lineTitle {
+  clip-path: polygon(0 0,99% 0,100% 100%,0 100%);
+  height: 10px;
+  width: 63%;
+  background: #41494e;
+}

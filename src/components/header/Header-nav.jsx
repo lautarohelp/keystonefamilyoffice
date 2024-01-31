@@ -6,6 +6,7 @@ import { IoMdClose } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FadeIn } from "../Componenets-animation/FadeIn";
 import gsap from "gsap";
+import { NavLink } from "react-router-dom";
 
 
 export function HeaderNav({ logo, home, aboutUs, services, contactUs, benefits }) {
@@ -55,7 +56,7 @@ export function HeaderNav({ logo, home, aboutUs, services, contactUs, benefits }
           start="15"
           >
         <li className="Menu-li">
-          <a className="Menu-ancla" href="">{home}</a>
+          <NavLink className="Menu-ancla" to={"/"}>{home}</NavLink>
         </li>
           </FadeIn>
           <FadeIn
@@ -64,7 +65,7 @@ export function HeaderNav({ logo, home, aboutUs, services, contactUs, benefits }
           start="15"
           >
         <li className="Menu-li">
-          <a className="Menu-ancla" href="">{aboutUs}</a>
+        <NavLink className="Menu-ancla" to={"about_us"}>{aboutUs}</NavLink>
         </li>
         </FadeIn>
 
@@ -84,7 +85,7 @@ export function HeaderNav({ logo, home, aboutUs, services, contactUs, benefits }
           time="1.6"
           >
         <li className="Menu-li" >
-          <a className="Menu-ancla" href="">{contactUs}</a>
+          <NavLink className="Menu-ancla" to={"contacts"}>{contactUs}</NavLink>
         </li>
         </FadeIn>
 
@@ -94,7 +95,7 @@ export function HeaderNav({ logo, home, aboutUs, services, contactUs, benefits }
           time="1.8"
           >
         <li className="Menu-li">
-          <a className="Menu-ancla" href="">{benefits}</a>
+          <NavLink className="Menu-ancla" to={"employee"}>{benefits}</NavLink>
         </li>
         </FadeIn>
       </ul>
@@ -104,6 +105,34 @@ export function HeaderNav({ logo, home, aboutUs, services, contactUs, benefits }
   </>
   );
 }
+
+const routes = [];
+routes.push({
+  to:'/',
+  text:'Home',
+  private: false,
+});
+routes.push({
+  to:'/blog',
+  text:'Blog',
+  private: false,
+});
+routes.push({
+  to:'/profile',
+  text:'profile',
+  private: true,
+});
+routes.push({
+  to:'/login',
+  text:'Login',
+  private: false,
+  publicOnly: true,
+});
+routes.push({
+  to:'/logout',
+  text:'Logout',
+  private: true,
+});
 
 HeaderNav.propTypes = {
   logo: PropTypes.string.isRequired,
