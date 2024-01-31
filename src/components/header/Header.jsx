@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { HeaderNav } from "./Header-nav";
 import logo from "../../../img/white-logo-navbar.1c9c0bb65b54b3a52b1d.webp";
 import "./Header.css";
