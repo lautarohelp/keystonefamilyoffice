@@ -10,11 +10,7 @@
         flex-direction: column;
         width: 100%;
         background-color:rgba(152, 251, 152, 0);
-<<<<<<< HEAD
-=======
         margin: 50px 0;
-
->>>>>>> 6e8979b77d6b615f9fe3792675bc56a4fb89a125
     }
     .card_Maincontainer2{
         display: none;
