@@ -4,7 +4,7 @@ import './Title.css'
 function Title({title}) {
   return (
     <>
-      <h1>{title}</h1>
+      <h1 className='main_title'>{title}</h1>
       <div className='lineTitle'></div>
     </>
   )
