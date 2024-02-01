@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+.Services-option.scrolled {
+  background-color: transparent;
+}
+
 .inactive {
   display: none;
 }
@@ -47,4 +51,10 @@ li {
     width: 300px;
     left: -8px;
   }
+
+  .Services-option.scrolled {
+    background-color: #41494e;
+    ;
+  }
+
 }

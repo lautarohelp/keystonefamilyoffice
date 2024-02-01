@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import "./Services.css"
@@ -7,24 +7,24 @@ import gsap from "gsap";
 
 
 
-export function Services({ services }) {
+export function Services({ services, scrolling }) {
 
   let [servicesOptions, setServicesOptions] = useState(false)
-  
+
 
   useEffect(() => {
     if (servicesOptions) {
       gsap.to('.holaaaa', {
         duration: 1,
         opacity: 1,
-        y:10,
+        y: 10,
         ease: 'power3.out',
       });
-    } else{
+    } else {
       gsap.to('.holaaaa', {
         duration: 1,
         opacity: 0,
-        y:1,
+        y: 1,
         ease: 'power3.out',
       });
     }
@@ -37,11 +37,11 @@ export function Services({ services }) {
 
 
   return (<>
-  
-    <div className="Menu-div" onClick={toggleServicesOptions} href="" >{services}
+
+    <div className={`Menu-div ${scrolling ? 'scrolled' : ''}`} onClick={toggleServicesOptions} href="" >{services}
       {servicesOptions ? <IoIosArrowUp className="arrowOption" /> : <IoIosArrowDown className="arrowOption" />}
-      <div className="holaaaa" style={{opacity: 0}}>
-        <ul className={`${servicesOptions ? "Services-option" : "inactive"}`} >
+      <div className="holaaaa" style={{ opacity: 0 }}>
+        <ul className={`${servicesOptions ? "Services-option" : "inactive"} ${scrolling ? 'scrolled' : ''}`} >
           <li> <a className="Services-option-a" href="">Tax and Accounting</a></li>
           <li>
             <a className="Services-option-a" href="">Corporate Service </a>
@@ -57,7 +57,7 @@ export function Services({ services }) {
           </li>
         </ul>
       </div>
-    
+
     </div>
 
   </>)

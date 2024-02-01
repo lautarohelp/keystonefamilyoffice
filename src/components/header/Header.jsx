@@ -2,6 +2,7 @@
 import { HeaderNav } from "./Header-nav";
 import PropTypes from 'prop-types';
 import logo from "../../../img/white-logo-navbar.1c9c0bb65b54b3a52b1d.webp";
+import logoTwo from "../../../img/logo-navbar.eddf3391f156ecefb2e5.webp";
 import "./Header.css";
 
 Header.propTypes = {
@@ -15,9 +16,11 @@ export function Header({ img, text, title }) {
   return (<>
 
     <div className="Header-container" style={{ display: 'flex', backgroundImage: `url(${img})`, backgroundRepeat: `none`, backgroundPosition: `center`, backgroundSize: `cover` }}  >
+
       <h2 className="titles">{title}</h2>
       <HeaderNav
         logo={logo}
+        logoTwo={logoTwo}
         className={"Menu-ancla"}
         home={'Home'}
         aboutUs={'About Us'}
