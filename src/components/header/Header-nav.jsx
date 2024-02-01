@@ -8,7 +8,7 @@ import { FadeIn } from "../Componenets-animation/FadeIn";
 import gsap from "gsap";
 
 
-export function HeaderNav({ logo, logoTwo, home, aboutUs, services, contactUs, benefits }) {
+export function HeaderNav({ home, aboutUs, services, contactUs, benefits }) {
 
   //funcion para que se abra el menu
   let [menuOptions, setMenuOptions] = useState(false)
@@ -54,8 +54,9 @@ export function HeaderNav({ logo, logoTwo, home, aboutUs, services, contactUs, b
   return (<>
     <div className="Header">
       <div className={`bg-nav ${scrolling ? 'scrolled' : ''}`}></div>
-      {/* <img className="Header-logoApp" src={logo} alt="logo"  /> */}
-      <img className={`Header-logoApp ${scrolling ? 'scrolled' : ''}`} src={logoTwo} alt=" logoTwo" />
+
+      <div className={`Header-logoApp ${scrolling ? `scrolled` : ""}`}  ></div>
+
       <div className={`Menu-icon ${scrolling ? 'scrolled' : ''}`} onClick={openMenu}><GiHamburgerMenu /></div>
 
       <ul className={`${menuOptions ? "Menu" : "inactive"} mediaOptions`}>

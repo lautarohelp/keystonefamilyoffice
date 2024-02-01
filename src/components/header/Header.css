@@ -14,7 +14,7 @@
 
 .titles {
   position: absolute;
-  right: 650px;
+  right: 780px;
   top: 200px;
   text-align: center;
   font-size: 5.5rem;
@@ -39,8 +39,6 @@
     z-index: 3;
     display: flex;
     flex-direction: row;
-    padding-right: 5px;
-    color: white
   }
 }
 
@@ -53,7 +51,7 @@
 
   .titles {
     position: absolute;
-    right: 170px;
+    right: 220px;
     top: 175px;
     text-align: center;
     font-size: 4rem;
