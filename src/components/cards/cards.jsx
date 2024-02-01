@@ -11,7 +11,7 @@ function Card({ img, order, title, text }) {
                 start='20'
                 directionEnd='x'
                 end='-20'
-                time='1.5'
+                time='1'
                 >
                 <section className='card_Maincontainer'>
                 
@@ -35,7 +35,7 @@ function Card({ img, order, title, text }) {
             start='-20'
             directionEnd='x'
             end='20'
-            time='1.5'
+            time='1'
             >
                 <section className='card_Maincontainer2'>
                     <img src={img} />

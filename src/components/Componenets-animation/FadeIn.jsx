@@ -7,7 +7,7 @@ import './FadeIn.css';
 // Registra el plugin de ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
-function FadeIn({ time ,start, end,directionStart, directionEnd, children }) {
+function FadeIn({ time ,start, end, directionStart, directionEnd, animation, children }) {
   let child = useRef(null);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ function FadeIn({ time ,start, end,directionStart, directionEnd, children }) {
           duration: [time],
           opacity: 1,
           [directionStart]: [start],
-          ease: 'power3.out',
+          ease: [animation] || 'power3.out' ,
         });
       },
       onLeaveBack: () => {
@@ -30,7 +30,7 @@ function FadeIn({ time ,start, end,directionStart, directionEnd, children }) {
           duration: [time],
           opacity: 0,
           [directionEnd]: [end],
-          ease: 'power3.out', 
+          ease: [animation] || 'power3.out', 
         });
       },
     });
@@ -50,6 +50,7 @@ FadeIn.propTypes = {
   end: PropTypes.string,
   start: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
+  animation: PropTypes.string.isRequired,
 }
 
 export { FadeIn };

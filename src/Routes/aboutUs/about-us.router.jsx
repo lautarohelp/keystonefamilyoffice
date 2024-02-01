@@ -18,14 +18,16 @@ function AboutUs() {
                         start="-20"
                         directionEnd="y"
                         end="20"
-                        time="0.7"
+                        time="1.5"
+                        animation="elastic.out"
                         >
                             <div className="title-AboutUp">
-                            <Title
-                            title="ABOUT KEYSTONE FAMILY OFFICE"
-                            />
+                                <Title
+                                title="ABOUT KEYSTONE FAMILY OFFICE"
+                                />
                             </div>
                     </FadeIn>
+
                     <FadeIn
                     directionStart="y"
                     start="-20"
@@ -33,7 +35,6 @@ function AboutUs() {
                     end="20"
                     time="0.7"
                     >
-                        
                         <p>
                             Keystone Family Office is an internationally focused multi-family office, which provides comprehensive advisory services to families and organizations.
                             <br />
@@ -52,7 +53,6 @@ function AboutUs() {
                         </p>
                     </FadeIn>
                 </div>
-
                 <FadeIn
                 directionStart="y"
                 start="-40"
@@ -81,7 +81,8 @@ function AboutUs() {
                 start="-20"
                 directionEnd="y"
                 end="20"
-                time="1"
+                time="1.5"
+                animation="elastic.out"
                 >
                     <div className="title-AboutUp">
                     <Title

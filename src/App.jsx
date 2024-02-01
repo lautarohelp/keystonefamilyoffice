@@ -11,7 +11,8 @@ import { RealEstateSupport } from './Routes/Service.Routes/realEstate-support.ro
 import { TrustSupport } from './Routes/Service.Routes/trust-support.router.jsx';
 import { WealthManagement } from './Routes/Service.Routes/wealth-management.router.jsx';
 import { ContactUs } from './Routes/contact-us.router.jsx';
-import { EmployeeBenefits } from './Routes/employee.router.jsx';
+import { EmployeeBenefits } from './Routes/employe/employee.router.jsx';
+
 
 function App() {
 
