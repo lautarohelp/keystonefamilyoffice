@@ -20,18 +20,18 @@ function App() {
     <>
       <HashRouter>
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path='/about_us' element={<AboutUs/>}></Route>
-          <Route path='/tax_accounting' element={<TaxAccounting/>}></Route>
-          <Route path='/corporate' element={<CorporateService/>}></Route>
-          <Route path='/realEstate' element={<RealEstateSupport/>}></Route>
-          <Route path='/trust_support' element={<TrustSupport/>}></Route>
-          <Route path='/wealth_management' element={<WealthManagement/>}></Route>
-          <Route path='/contacts' element={<ContactUs/>}></Route>
-          <Route path='/employee' element={<EmployeeBenefits/>}></Route>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/about_us' element={<AboutUs />}></Route>
+          <Route path='/tax_accounting' element={<TaxAccounting />}></Route>
+          <Route path='/corporate' element={<CorporateService />}></Route>
+          <Route path='/realEstate' element={<RealEstateSupport />}></Route>
+          <Route path='/trust_support' element={<TrustSupport />}></Route>
+          <Route path='/wealth_management' element={<WealthManagement />}></Route>
+          <Route path='/contacts' element={<ContactUs />}></Route>
+          <Route path='/employee' element={<EmployeeBenefits />}></Route>
           <Route path='*' element={"Not Found"}></Route>
         </Routes>
-      <Footer/>
+        <Footer />
       </HashRouter>
     </>
   )

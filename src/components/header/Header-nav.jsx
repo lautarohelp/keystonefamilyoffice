@@ -9,26 +9,39 @@ import gsap from "gsap";
 import {  NavLink } from "react-router-dom";
 
 
-export function HeaderNav({ logo, home, aboutUs, services, contactUs, benefits }) {
-
-  
-
+export function HeaderNav({ home, title, aboutUs, services, contactUs, benefits }) {
 
   //funcion para que se abra el menu
-  let [menuOptions, setMenuOptions] = useState(false)
+  const [menuOptions, setMenuOptions] = useState(false)
+
+  const [scrolling, setScrolling] = useState(false)
+  const handleScroll = () => {
+    if (window.scrollY > 3) {
+      setScrolling(true);
+    } else {
+      setScrolling(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     if (menuOptions) {
       gsap.to('.mediaOptions', {
         duration: 1,
-        x:10,
+        x: 10,
         ease: 'power3.out',
       });
     } else if (setMenuOptions) {
       gsap.to('.mediaOptions', {
         duration: 1,
-        y:-5,
-        x:1,
+        y: -5,
+        x: 1,
         ease: 'power3.out',
       });
     }
@@ -39,66 +52,67 @@ export function HeaderNav({ logo, home, aboutUs, services, contactUs, benefits }
   }
 
 
-  
-
-
   return (<>
     <div className="Header">
-      <img className="Header-logoApp" src={logo} alt="logo" />
-      <div className="Menu-icon" onClick={openMenu}><GiHamburgerMenu /></div>
+      <div className={`bg-nav ${scrolling ? 'scrolled' : ''}`}></div>
+      <h2 className="titles">{title}</h2>
+      <div className={`Header-logoApp ${scrolling ? `scrolled` : ""}`}  ></div>
+
+      <div className={`Menu-icon ${scrolling ? 'scrolled' : ''}`} onClick={openMenu}><GiHamburgerMenu /></div>
 
       <ul className={`${menuOptions ? "Menu" : "inactive"} mediaOptions`}>
         <div className="Menu-icon Menu-iconX" onClick={openMenu}><IoMdClose /></div>
 
-          <FadeIn
+        <FadeIn
           directionStart="y"
           time="0.5"
           start="15"
-          >
-        <li className="Menu-li">
-          <NavLink className="Menu-ancla" to={"/"}>{home}</NavLink>
-        </li>
-          </FadeIn>
-          <FadeIn
+        >
+          <li className="Menu-li">
+            <NavLink to={"/"} className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} >{home}</NavLink>
+          </li>
+        </FadeIn>
+        <FadeIn
           directionStart="y"
           time="1.2"
           start="15"
-          >
-        <li className="Menu-li">
-        
-          <NavLink className="Menu-ancla" to={"/about_us"}>{aboutUs}</NavLink>
-        
-        </li>
+        >
+          <li className="Menu-li">
+            <NavLink to={"/about_us"} className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} >{aboutUs}</NavLink>
+          </li>
+
         </FadeIn>
 
         <FadeIn
           directionStart="y"
           time="1.4"
           start="15"
-          >
-        <li className="Menu-li">
-          <Services services={services} />
-        </li>
+        >
+          <li className="Menu-li ">
+            <Services services={services} scrolling={scrolling} />
+          </li>
         </FadeIn>
 
         <FadeIn
           directionStart="y"
           start="15"
           time="1.6"
-          >
-        <li className="Menu-li" >
-            <NavLink className="Menu-ancla" to={"/contacts"}>{contactUs}</NavLink>
-        </li>
+        >
+          <li className="Menu-li" >
+            <NavLink to={"/contacts"} className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} >{contactUs}</NavLink>
+          </li>
+
         </FadeIn>
 
         <FadeIn
           directionStart="y"
           start="15"
           time="1.8"
-          >
-        <li className="Menu-li">
-          <NavLink className="Menu-ancla" to={"/employee"}>{benefits}</NavLink>
-        </li>
+        >
+          <li className="Menu-li">
+            <NavLink to={"/employee"} className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} >{benefits}</NavLink>
+          </li>
+
         </FadeIn>
       </ul>
 
@@ -108,40 +122,15 @@ export function HeaderNav({ logo, home, aboutUs, services, contactUs, benefits }
   );
 }
 
-const routes = [];
-routes.push({
-  to:'/',
-  text:'Home',
-  private: false,
-});
-routes.push({
-  to:'/blog',
-  text:'Blog',
-  private: false,
-});
-routes.push({
-  to:'/profile',
-  text:'profile',
-  private: true,
-});
-routes.push({
-  to:'/login',
-  text:'Login',
-  private: false,
-  publicOnly: true,
-});
-routes.push({
-  to:'/logout',
-  text:'Logout',
-  private: true,
-});
+
 
 HeaderNav.propTypes = {
-  logo: PropTypes.string.isRequired,
+
   home: PropTypes.string.isRequired,
   aboutUs: PropTypes.string.isRequired,
   services: PropTypes.string.isRequired,
   contactUs: PropTypes.string.isRequired,
   benefits: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 }
 
