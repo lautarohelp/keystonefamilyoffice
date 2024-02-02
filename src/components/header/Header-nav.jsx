@@ -6,14 +6,15 @@ import { IoMdClose } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FadeIn } from "../Componenets-animation/FadeIn";
 import gsap from "gsap";
+import { NavLink } from "react-router-dom";
 
 
 export function HeaderNav({ home, aboutUs, services, contactUs, benefits }) {
 
   //funcion para que se abra el menu
-  let [menuOptions, setMenuOptions] = useState(false)
+  const [menuOptions, setMenuOptions] = useState(false)
 
-  let [scrolling, setScrolling] = useState(false)
+  const [scrolling, setScrolling] = useState(false)
   const handleScroll = () => {
     if (window.scrollY > 3) {
       setScrolling(true);
@@ -68,7 +69,7 @@ export function HeaderNav({ home, aboutUs, services, contactUs, benefits }) {
           start="15"
         >
           <li className="Menu-li">
-            <a className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} href="">{home}</a>
+            <NavLink className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} >{home}</NavLink>
           </li>
         </FadeIn>
         <FadeIn
@@ -77,8 +78,10 @@ export function HeaderNav({ home, aboutUs, services, contactUs, benefits }) {
           start="15"
         >
           <li className="Menu-li">
-            <a className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} href="">{aboutUs}</a>
+            <NavLink to={"/about_us"} className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} >{aboutUs}</NavLink>
           </li>
+
+
         </FadeIn>
 
         <FadeIn
@@ -97,8 +100,9 @@ export function HeaderNav({ home, aboutUs, services, contactUs, benefits }) {
           time="1.6"
         >
           <li className="Menu-li" >
-            <a className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} href="">{contactUs}</a>
+            <NavLink to={"/contacts"} className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} >{contactUs}</NavLink>
           </li>
+
         </FadeIn>
 
         <FadeIn
@@ -107,8 +111,9 @@ export function HeaderNav({ home, aboutUs, services, contactUs, benefits }) {
           time="1.8"
         >
           <li className="Menu-li">
-            <a className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} href="">{benefits}</a>
+            <NavLink to={"employee"} className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} >{benefits}</NavLink>
           </li>
+
         </FadeIn>
       </ul>
 
@@ -117,6 +122,34 @@ export function HeaderNav({ home, aboutUs, services, contactUs, benefits }) {
   </>
   );
 }
+
+const routes = [];
+routes.push({
+  to: '/',
+  text: 'Home',
+  private: false,
+});
+routes.push({
+  to: '/blog',
+  text: 'Blog',
+  private: false,
+});
+routes.push({
+  to: '/profile',
+  text: 'profile',
+  private: true,
+});
+routes.push({
+  to: '/login',
+  text: 'Login',
+  private: false,
+  publicOnly: true,
+});
+routes.push({
+  to: '/logout',
+  text: 'Logout',
+  private: true,
+});
 
 HeaderNav.propTypes = {
   logo: PropTypes.string.isRequired,

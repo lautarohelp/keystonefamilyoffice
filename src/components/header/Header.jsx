@@ -1,4 +1,3 @@
-
 import { HeaderNav } from "./Header-nav";
 import PropTypes from 'prop-types';
 import "./Header.css";
