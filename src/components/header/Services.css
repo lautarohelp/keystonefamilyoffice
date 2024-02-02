@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+.Services-option.scrolled {
+  background-color: transparent;
+}
+
 .inactive {
   display: none;
 }
@@ -24,7 +28,7 @@ li {
 }
 
 .Services-option li:hover {
-  background-color: rgb(137, 136, 136);
+  background-color: rgb(98, 98, 98);
 }
 
 .Menu-div {
@@ -34,8 +38,8 @@ li {
 
 .arrowOption {
   position: absolute;
-  font-size: 2.3rem;
-  top: -3px;
+  font-size: 20px;
+  top: 1px;
 
 }
 
@@ -47,4 +51,9 @@ li {
     width: 300px;
     left: -8px;
   }
+
+  .Services-option.scrolled {
+    background-color: #5f6366a6;
+  }
+
 }
