@@ -21,6 +21,7 @@
   color: rgb(235, 224, 245);
   font-size: 2.3rem;
   font-family: 'Libre Baskerville', serif;
+  padding: 0 20px ;
 }
 
 @media(min-width: 800px) {

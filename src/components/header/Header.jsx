@@ -6,7 +6,6 @@ import "./Header.css";
 Header.propTypes = {
   img: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
 }
 
 export function Header({ img, text }) {

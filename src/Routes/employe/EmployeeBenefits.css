@@ -1,0 +1,13 @@
+.container-EmployeeBenefits{
+  font-size: 1.55rem;
+  padding: 0 15px ;
+  margin: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-Main-Employee {
+  margin: 20px 0;
+  border: solid 1px #cecece;
+  padding: 50px 60px;
+}

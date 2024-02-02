@@ -33,7 +33,7 @@ function AboutUs() {
                     start="-20"
                     directionEnd="y"
                     end="20"
-                    time="0.7"
+                    time="0.3"
                     >
                         <p>
                             Keystone Family Office is an internationally focused multi-family office, which provides comprehensive advisory services to families and organizations.
@@ -58,7 +58,7 @@ function AboutUs() {
                 start="-40"
                 directionEnd="y"
                 end="40"
-                time="1.5"
+                time="0.7"
                 >
                     <img src="https://www.keystonefamilyoffice.com/static/media/about-1.764aa2c99f21e782bc8d.webp" alt="" />
                 </FadeIn>
@@ -71,7 +71,7 @@ function AboutUs() {
                 start="-40"
                 directionEnd="y"
                 end="40"
-                time="1.5"
+                time="0.7"
                 >
                 <img src="https://www.keystonefamilyoffice.com/static/media/about-2.e8469ef599420262ec10.webp" alt="" />
             </FadeIn>
@@ -95,7 +95,7 @@ function AboutUs() {
                 start="-20"
                 directionEnd="y"
                 end="20"
-                time="0.7"
+                time="0.3"
                 >
                     <p>
                         Most sources point to the early origins of the concept of family offices as American industrialist and entrepreneur, John D. Rockefeller Sr. At his death in 1937, his fortune stood at the approximate equivalent of $255 billion today and is considered one of the wealthiest persons in history.

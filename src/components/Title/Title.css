@@ -1,7 +1,27 @@
 .lineTitle {
   clip-path: polygon(0 0,99% 0,100% 100%,0 100%);
   height: 10px;
-  width: 63%;
+  width: 93%;
   background: #41494e;
-  margin-top: 15px ;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.main_title{
+  color: #020024;
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 3.2rem;
+  font-weight: 400;
+  width: 80%;
+}
+
+
+@media ( min-width: 990px){
+  .lineTitle{
+    width: 63%;
+  }
+  .main_title{
+    font-size: 6rem;
+  }
 }
