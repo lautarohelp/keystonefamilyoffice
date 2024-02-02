@@ -14,7 +14,7 @@
 
 .titles {
   position: absolute;
-  right: 780px;
+  right: 500px;
   top: 200px;
   text-align: center;
   font-size: 5.5rem;
@@ -51,7 +51,7 @@
 
   .titles {
     position: absolute;
-    right: 220px;
+    right: 7%;
     top: 175px;
     text-align: center;
     font-size: 4rem;

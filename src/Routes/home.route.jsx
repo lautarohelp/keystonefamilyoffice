@@ -6,7 +6,7 @@ function Home() {
     <Header
       img={'../img/home-bg.2ba84dacc0df6ddf98df.webp'}
       text={'BUILD A STRONG FOUNDATION FOR YOUR FINANCIAL FUTURE'}
-      title={'HOME'}
+
     />
 
     <Card title={"WELCOME"}

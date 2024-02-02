@@ -13,9 +13,8 @@ export function Header({ img, text, title }) {
   return (<>
 
     <div className="Header-container" style={{ display: 'flex', backgroundImage: `url(${img})`, backgroundRepeat: `none`, backgroundPosition: `center`, backgroundSize: `cover` }}  >
-
-      <h2 className="titles">{title}</h2>
       <HeaderNav
+        title={title}
         className={"Menu-ancla"}
         home={'Home'}
         aboutUs={'About Us'}
