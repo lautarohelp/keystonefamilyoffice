@@ -1,0 +1,13 @@
+.li-items {
+  list-style:inside;
+  color: black;
+  display: list-item;
+  list-style-position: outside;
+  padding: 0;
+  margin: 30px 17px;
+}
+
+.li-spam-items {
+  font-weight: bold;
+  margin-right: 7px;
+}

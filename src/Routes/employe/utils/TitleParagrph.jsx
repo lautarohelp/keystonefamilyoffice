@@ -10,13 +10,13 @@ export function TitleParagraph({img, title, text}) {
         <span className='svg-TitleP'>{img}</span> 
       </div>
       <p>{text}</p>
-      </div>
+    </div>
     </>
     )
 }
 
 TitleParagraph.propTypes = {
-  img: PropTypes.string.isRequired,
+  img: PropTypes.object,
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 }

@@ -50,7 +50,7 @@ FadeIn.propTypes = {
   end: PropTypes.string,
   start: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
-  animation: PropTypes.string.isRequired,
+  animation: PropTypes.any,
 }
 
 export { FadeIn };

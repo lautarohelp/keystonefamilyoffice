@@ -13,6 +13,6 @@ export function Items({item, text}) {
 }
 
 Items.propTypes = {
-  item: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  item: PropTypes.string,
+  text: PropTypes.string,
 }

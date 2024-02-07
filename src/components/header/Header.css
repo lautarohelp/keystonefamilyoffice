@@ -8,13 +8,15 @@
   display: flex;
   flex-direction: column;
   height: 400px;
+  position: relative;
 
 
 }
 
 .titles {
   position: absolute;
-  right: 500px;
+  right: 7%;
+  left: 7%;
   top: 200px;
   text-align: center;
   font-size: 5.5rem;

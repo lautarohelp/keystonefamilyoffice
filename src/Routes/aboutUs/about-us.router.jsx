@@ -8,6 +8,7 @@ function AboutUs() {
         <Header
             img={'https://www.keystonefamilyoffice.com/static/media/about-bg.74ca8dee56f0360ced0e.webp'}
             text={'OUR GOAL IS TO BE A TRUSTED PARTNER OF OUR CLIENTS'}
+            title="ABOUT US"
         />
         
         <div className="container-AboutUs">
@@ -85,9 +86,9 @@ function AboutUs() {
                 animation="elastic.out"
                 >
                     <div className="title-AboutUp">
-                    <Title
-                    title="THE MULTI-FAMILY OFFICE CONCEPT"
-                    />
+                        <Title
+                        title="THE MULTI-FAMILY OFFICE CONCEPT"
+                        />
                     </div>
                 </FadeIn>
                 <FadeIn
