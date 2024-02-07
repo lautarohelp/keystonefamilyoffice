@@ -6,10 +6,15 @@ import { IoMdClose } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FadeIn } from "../Componenets-animation/FadeIn";
 import gsap from "gsap";
-import { NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 
 
-export function HeaderNav({ home, title, aboutUs, services, contactUs, benefits }) {
+export function HeaderNav({ home, aboutUs, services, contactUs, benefits }) {
+
+  // funcion para llevar el escroll arriva
+  function scrollTop() {
+    window.scrollTo({top , behavior: "smooth"})
+  }
 
   //funcion para que se abra el menu
   const [menuOptions, setMenuOptions] = useState(false)
@@ -55,7 +60,6 @@ export function HeaderNav({ home, title, aboutUs, services, contactUs, benefits 
   return (<>
     <div className="Header">
       <div className={`bg-nav ${scrolling ? 'scrolled' : ''}`}></div>
-      <h2 className="titles">{title}</h2>
       <div className={`Header-logoApp ${scrolling ? `scrolled` : ""}`}  ></div>
 
       <div className={`Menu-icon ${scrolling ? 'scrolled' : ''}`} onClick={openMenu}><GiHamburgerMenu /></div>
@@ -69,7 +73,7 @@ export function HeaderNav({ home, title, aboutUs, services, contactUs, benefits 
           start="15"
         >
           <li className="Menu-li">
-            <NavLink to={"/"} className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} >{home}</NavLink>
+            <NavLink onClick={scrollTop} to={"/"} className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} >{home}</NavLink>
           </li>
         </FadeIn>
         <FadeIn
@@ -78,9 +82,8 @@ export function HeaderNav({ home, title, aboutUs, services, contactUs, benefits 
           start="15"
         >
           <li className="Menu-li">
-            <NavLink to={"/about_us"} className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} >{aboutUs}</NavLink>
+            <NavLink onClick={scrollTop} to={"/about_us"} className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} >{aboutUs}</NavLink>
           </li>
-
 
         </FadeIn>
 
@@ -100,7 +103,7 @@ export function HeaderNav({ home, title, aboutUs, services, contactUs, benefits 
           time="1.6"
         >
           <li className="Menu-li" >
-            <NavLink to={"/contacts"} className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} >{contactUs}</NavLink>
+            <NavLink onClick={scrollTop}  to={"/contacts"} className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} >{contactUs}</NavLink>
           </li>
 
         </FadeIn>
@@ -111,7 +114,7 @@ export function HeaderNav({ home, title, aboutUs, services, contactUs, benefits 
           time="1.8"
         >
           <li className="Menu-li">
-            <NavLink to={"/employee"} className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} >{benefits}</NavLink>
+            <NavLink  onClick={scrollTop}  to={"/employee"} className={`Menu-ancla  ${scrolling ? 'scrolled' : ''}`} >{benefits}</NavLink>
           </li>
 
         </FadeIn>

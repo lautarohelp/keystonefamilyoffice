@@ -1,0 +1,38 @@
+.ul-ulItems-container {
+  padding-left: 30px;
+  margin-right: 20px;
+  max-width: 600px;
+}
+
+@media(min-width: 780px) {
+  .ul-ulItems-container {
+    max-width: 750px;
+  }
+}
+
+@media(min-width: 950px) {
+  .ul-ulItems-container {
+    max-width: 950px;
+  }
+}
+
+@media(min-width: 1150px) {
+  .ul-ulItems-container {
+    max-width: 700px;
+  }
+
+  .container-ulItems-ulImg {
+    display: flex;
+    align-items: center;
+  }
+
+  .img-media-ulItems{
+    background-image: url('../../../../img/Archivo/employee-1.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 550px;
+    height: 550px;
+  }
+
+}

@@ -1,0 +1,28 @@
+.container-TitleParagraph {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.container-title-TitleParagraph{
+  display: flex;
+  align-items: center;
+}
+.container-title-TitleParagraph h1{
+  font-weight: 200;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.container-TitleParagraph p{
+  color: rgb(41, 39, 39);
+}
+.svg-TitleP {
+  color: #d5b34e;
+  font-size: 4.5rem;
+  margin-left: 15px;
+}
+
+@media(min-width: 1150px) {
+  .container-TitleParagraph {
+    max-width: 520px;
+  }
+}
